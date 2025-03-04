@@ -2,16 +2,16 @@
 
 Bonjour ! je suis Mathurin k (Mike Ross) Developpeur web moderne
 
-## COMPETENCES:  
-------------------------------------------------------|
-| TITRE                  |     DESCRIPTION            |
-|-----------------------------------------------------|
-| Front-end              | HTML, CSS , JS  et REACT...|
-|------------------------|----------------------------|
-| Back-end               |  Node et express...        |
-|------------------------|----------------------------|
-| cybersecurity          | haker                      |
-|------------------------|----------------------------|
+## COMPETENCES:
+ TITRE 
+ DESCRIPTION        
+
+|TITRE | DESCRIPTION|  
+|------|------------  
+|Frond-end | HTML - CSS - JS - REACT|  
+|Back-end  | NODE - EPRESS|  
+|Cybersecurity | haker|  
+-----------------------  
 
 ## OUTILS: 
 
