@@ -1,9 +1,44 @@
 #!/bin/bash
-# info sytem
+# info system
 
-echo "<html>"
-echo "<head>"
-echo "<title>Notre premiere page</title>"
-echo "</head>"
-echo "<body> corps de la page </body>"
-echo "</html>"
+################# CONSTANCE #######################
+Title="Info sur kali"
+jj="$(date +"%x %r %z")"
+mj="mise à jour $jj   sur $USER"
+
+################# Fonctions ######################
+info_User()
+{
+	echo "information d'utilisateur"
+}
+
+info_disk()
+{
+	echo "information du system"
+}
+
+info_chemin()
+{
+	echo "information sur l'environnement"
+}
+info_show_time(){
+	echo " $mj "
+}
+################### MAIN  ########################
+cat <<_EOF_
+<html>
+ <head>
+ <title>$Title </title>
+ </head>$HOSTNAME
+<body>
+<h1>$Title</h1> 
+<P>$mj</p>
+
+$(info_User)
+$(info_disk)
+$(info_chemin)
+$(info_show_time)  
+
+</body>
+</html>
+_EOF_
