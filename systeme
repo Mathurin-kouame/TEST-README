@@ -10,19 +10,23 @@ mj="mise à jour $jj   sur $USER"
 info_User()
 {
 	echo "information d'utilisateur"
+	uname -a
 }
 
 info_disk()
 {
 	echo "information du system"
+	lsblk
 }
 
 info_chemin()
 {
-	echo "information sur l'environnement"
+	echo "information sur l'environnement$PATH"
+	
 }
 info_show_time(){
-	echo " $mj "
+	echo "Information sur la mise à jour "
+	uptime
 }
 ################### MAIN  ########################
 cat <<_EOF_
@@ -34,7 +38,7 @@ cat <<_EOF_
 <h1>$Title</h1> 
 <P>$mj</p>
 
-$(info_User)
+<p>$(info_User)</p>
 $(info_disk)
 $(info_chemin)
 $(info_show_time)  

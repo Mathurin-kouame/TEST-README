@@ -1,0 +1,27 @@
+#!/bin/bash
+
+echo "###########################"
+echo "## ./scriptCorrection ##
+echo "## correction git ##
+
+repo_url= https://github.com/Mathurin-kouame/TEST-README.git
+
+echo -n "Entrer un message commit >"
+read commitmessage
+
+if [-d .git ]; then
+echo "votre depot est déjà initialisé"
+echo " push encours de demarrage "
+     git add .
+     git commit -m "commitmessage"
+     git push
+else
+
+     echo "initialise un nouveau repo"
+     git init
+     git add .
+     git commit -m $commitmessage
+     git branch -M main
+     git remote add $repo_url
+     git push -u origin main
+fi
